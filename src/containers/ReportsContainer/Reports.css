@@ -28,6 +28,11 @@
 .form-group4 {
   align-items: center !important;
 }
+
+.form-control {
+  font-family: "poppins";
+  font-weight: small !important;
+}
 .post-Btn {
   width: 20%;
   background-color: #ffbd59 !important;
