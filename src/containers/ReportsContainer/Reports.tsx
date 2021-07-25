@@ -220,7 +220,7 @@ function Reports() {
               setLat(parseFloat(latitude.toPrecision(4)));
               axios
                 .get(
-                  `http://api.geonames.org/countryCodeJSON?lat=${latitude}&lng=${longitude}&username=karimanhossam`
+                  `https://api.geonames.org/countryCodeJSON?lat=${latitude}&lng=${longitude}&username=karimanhossam`
                 )
                 .then((res: any) => {
                   setCountry(res.data.countryName);
