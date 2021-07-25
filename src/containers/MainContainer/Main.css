@@ -1,0 +1,16 @@
+.AppBar {
+  background-color: #241b148a !important;
+  transition: transform 2s; /* Animation */
+}
+.AppBar-dark {
+  background-color: rgb(17, 17, 17) !important;
+  transition: transform 2s; /* Animation */
+}
+.login-page {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+.cover-img {
+  width: 100%;
+}

@@ -1,0 +1,38 @@
+.card-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 4rem;
+  flex-wrap: wrap;
+}
+.root {
+  cursor: pointer;
+  max-width: 20rem;
+  background-color: #ffbd59 !important;
+  box-shadow: 7px 4px 1px -1px rgb(0 0 0 / 44%),
+    0px 1px 1px 0px rgb(0 0 0 / 66%), 0px 1px 3px 0px rgb(0 0 0 / 71%) !important;
+  transition: transform 0.5s; /* Animation */
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.root:hover {
+  transition: transform 0.5s; /* Animation */
+  -ms-transform: scale(1.02); /* IE 9 */
+  -webkit-transform: scale(1.02); /* Safari 3-8 */
+  transform: scale(1.02);
+  z-index: 100 !important;
+  background-color: #fcb74f !important;
+}
+.media {
+  width: inherit;
+}
+.avatar {
+  background-color: red;
+}
+ul {
+  padding-left: 0 !important;
+}
+ul li {
+  list-style: none;
+  margin-bottom: 0.5rem;
+}

@@ -3,9 +3,6 @@ export const PATIENTS_FAIL = "PATIENTS_FAIL";
 export const PATIENTS_SUCCESS = "PATIENTS_SUCCESS";
 
 export type Patient = {
-  id: PatientData;
-};
-export type PatientData = {
   first_name: string;
   last_name: string;
   email: string;
@@ -25,7 +22,7 @@ export interface PatientsFail {
 }
 export interface PatientsSuccess {
   type: typeof PATIENTS_SUCCESS;
-  payload: Patient;
+  payload: Patient[];
 }
 
 export type PatientsDispatchTypes =

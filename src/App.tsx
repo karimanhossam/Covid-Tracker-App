@@ -1,20 +1,13 @@
-import React, { useState } from "react";
-import { useDispatch } from "react-redux";
+import React from "react";
 import "./App.css";
-import { GetPatients } from "./actions/PatientsActions";
+import Main from "./containers/MainContainer/Main";
 
 function App() {
-  const dispatch = useDispatch();
-
-  /** On page load fetch data to see active user logged in */
-  React.useEffect(() => {
-    FetchData();
-  });
-  const FetchData = () => {
-    dispatch(GetPatients()); //calls action AuthCheckState
-  };
-
-  return <div className="App">test</div>;
+  return (
+    <div className="App">
+      <Main />
+    </div>
+  );
 }
 
 export default App;

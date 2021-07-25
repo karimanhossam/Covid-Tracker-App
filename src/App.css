@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  font-family: "poppins !important";
 }
 
 .App-logo {
@@ -35,4 +36,12 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+* {
+  box-sizing: border-box;
+}
+p {
+  margin: 0;
+  padding: 0;
 }
