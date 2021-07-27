@@ -179,6 +179,7 @@ function Tab1(props: TabPanelProps) {
               <Table
                 className={classes.table}
                 aria-label="custom pagination table"
+                size="small"
               >
                 <TableHead>
                   <TableRow className="table-head">
