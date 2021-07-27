@@ -265,7 +265,6 @@ function Reports() {
           )}
           <Form.Row>
             <Form.Group controlId="formGridTitle">
-              <Form.Label>First name *</Form.Label>
               <Form.Control
                 type="title"
                 placeholder="First name"
@@ -276,7 +275,6 @@ function Reports() {
               )}
             </Form.Group>
             <Form.Group controlId="formGridTitle">
-              <Form.Label>Last name *</Form.Label>
               <Form.Control
                 type="title"
                 placeholder="Last name"
@@ -288,7 +286,6 @@ function Reports() {
             </Form.Group>
 
             <Form.Group controlId="formGridRating">
-              <Form.Label>Email</Form.Label>
               <Form.Control
                 type="title"
                 placeholder="Email"
@@ -299,7 +296,6 @@ function Reports() {
           </Form.Row>
           <Form.Row>
             <Form.Group controlId="formGridRating">
-              <Form.Label>Age *</Form.Label>
               <Form.Control
                 type="number"
                 min="10"
@@ -310,7 +306,6 @@ function Reports() {
               {ageError && <span className="text-danger">{ageText}</span>}
             </Form.Group>
             <Form.Group controlId="formGridRating">
-              <Form.Label>Temperature *</Form.Label>
               <Form.Control
                 type="number"
                 min="35"
@@ -353,7 +348,6 @@ function Reports() {
               className="form-group3"
               controlId="exampleForm.ControlTextarea1"
             >
-              <Form.Label>Symptoms</Form.Label>
               <Form.Control
                 as="textarea"
                 rows={3}
