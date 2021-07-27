@@ -45,3 +45,15 @@
 .custom-dropdown :focus-visible {
   outline: 0 !important;
 }
+
+.tabs-items > div > span {
+  background-color: #ffbd59 !important;
+}
+
+.tabs-items div div button {
+  color: #69c2cc !important;
+}
+
+.tabs-items div div .Mui-selected {
+  color: #666 !important;
+}
