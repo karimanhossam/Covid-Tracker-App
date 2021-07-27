@@ -180,7 +180,7 @@ function Tab2(props: TabPanelProps) {
               {patientsState.loading && <Spinner animation="border" />}
               {!patientsState.loading && patientsState.patients && (
                 <TableContainer component={Paper} className="custom-table">
-                  <Table aria-label="custom pagination table">
+                  <Table aria-label="custom pagination table" size="small">
                     <TableHead>
                       <TableRow className="table-head">
                         <TableCell>Name</TableCell>
