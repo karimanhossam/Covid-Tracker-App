@@ -69,7 +69,7 @@ function TablePaginationActions(props: TablePaginationActionsProps) {
   const handleLastPageButtonClick = (
     event: React.MouseEvent<HTMLButtonElement>
   ) => {
-    onPageChange(event, Math.max(0, Math.ceil(count / rowsPerPage)));
+    onPageChange(event, Math.max(0, Math.ceil(count / rowsPerPage) - 1));
   };
 
   return (
@@ -94,7 +94,7 @@ function TablePaginationActions(props: TablePaginationActionsProps) {
       </IconButton>
       <IconButton
         onClick={handleNextButtonClick}
-        disabled={page >= Math.ceil(count / rowsPerPage)}
+        disabled={page >= Math.ceil(count / rowsPerPage) - 1}
         aria-label="next page"
       >
         {theme.direction === "rtl" ? (
@@ -105,7 +105,7 @@ function TablePaginationActions(props: TablePaginationActionsProps) {
       </IconButton>
       <IconButton
         onClick={handleLastPageButtonClick}
-        disabled={page >= Math.ceil(count / rowsPerPage)}
+        disabled={page >= Math.ceil(count / rowsPerPage) - 1}
         aria-label="last page"
       >
         {theme.direction === "rtl" ? <FirstPageIcon /> : <LastPageIcon />}
@@ -233,9 +233,7 @@ function Tab1(props: TabPanelProps) {
                         { label: "All", value: -1 },
                       ]}
                       colSpan={6}
-                      count={Math.ceil(
-                        patientsState.patients.length / rowsPerPage
-                      )}
+                      count={patientsState.patients.length}
                       rowsPerPage={rowsPerPage}
                       page={page}
                       SelectProps={{

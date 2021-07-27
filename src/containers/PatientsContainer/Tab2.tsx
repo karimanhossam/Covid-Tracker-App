@@ -233,9 +233,7 @@ function Tab2(props: TabPanelProps) {
                             { label: "All", value: -1 },
                           ]}
                           colSpan={6}
-                          count={Math.ceil(
-                            patientsState.patients.length / rowsPerPage
-                          )}
+                          count={patientsState.patients.length}
                           rowsPerPage={rowsPerPage}
                           page={page}
                           SelectProps={{
