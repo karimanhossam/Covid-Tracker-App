@@ -1,6 +1,7 @@
 .report-title {
   font-family: "poppins";
   margin-top: 1.2rem;
+  margin-bottom: 1.2rem !important;
   font-size: large;
   color: #5dbac0;
 }
